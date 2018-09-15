@@ -134,3 +134,17 @@ LOGIN_REDIRECT_URL = 'blog-home'
 
 # Where to redirect after trying to access a page that requires to be logged in by an unlogged user.
 LOGIN_URL = 'login'
+
+# Where to upload files to:
+MEDIA_ROOT =os.path.join(BASE_DIR, 'media')
+
+# The "name" of URL that you can access the files from:
+MEDIA_URL = '/media/'
+
+# Setting an Email server
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 465
+EMAIL_USE_SSL = True
+EMAIL_HOST_USER = 'JakNowySolutions@gmail.com'
+EMAIL_HOST_PASSWORD = 'xxxxxx'
